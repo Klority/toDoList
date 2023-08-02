@@ -1,0 +1,203 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    background-image: url("../resourсes/background.svg");
+    background-repeat: no-repeat;
+    background-size: 875px auto;
+    background-position-x: 530px;
+    background-position-y: 218px;
+    background-attachment: scroll;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 20px 634px 17px 23px;
+    padding-bottom: 18px;
+    color: #53565A;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 18px;
+}
+
+.searchSection{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 33px;
+}
+.logoImg{
+    width: 174px;
+    height: 44px;
+    margin-right: 20px;
+}
+#search-field{
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    width: 582px;
+    padding-left: 15px;
+    padding-right: 12px;
+    background: linear-gradient(0deg, #F6F6F6, #F6F6F6), #FEFEFE;
+    border: 1px solid #E2E2E2;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+#search-field::placeholder {
+    background: url("../resourсes/Search.svg") no-repeat;
+    background-size: 12px 12px;
+    font-weight: 500;
+    color:  #b3b3b3;
+}
+.linksCollection{
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #E2E2E2;
+    margin-left: 21px;
+    opacity: 1;
+}
+#doneTasksLink,#activeTasksLink,#allTasksLink{
+    text-align: center;
+    width: 175px;
+    height: 30px;
+    padding-top: 16px;
+}
+.link-active{
+    border-top: 4px solid  #2F80ED;
+    padding-top: 0px;
+}
+.link-active a{
+    color: #53565A;
+    opacity: 1;
+
+}
+A{
+    text-decoration: none;
+    font-weight: 900;
+    color: #53565A;
+    opacity: 0.5;
+}
+A:hover{
+    opacity: 1;
+}
+.newTaskForm{
+    display: flex;
+    flex-direction: column;
+    margin-left: 26px;
+    margin-bottom: 23px;
+}
+.formLabel{
+    font-family: 'Salesforce Sans';
+    font-size: 12px;
+    line-height: 15px;
+    color: #706E6B;
+    margin-bottom: 3px;
+}
+#textField{
+    height: 90px;
+    resize: none;
+    margin-bottom: 11px;
+    border: 1px solid #DDDBDA;
+    border-radius: 4px;
+}
+.newTaskForm button{
+    margin-left: 568px;
+    border: none;
+    height: 36px;
+    background: #2F80ED;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    margin-left: 17px;
+}
+#main section:hover {
+    border: 1px solid rgba(47, 128, 237, 0.5);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+}
+.task{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 17px ;
+    height: 109px;
+    border: 1px solid white;
+    background: white;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+.taskText{
+    width: 460px;
+    font-weight: 400;
+    padding-top: 16px;
+    padding-left: 23px;
+    overflow-wrap: break-word;
+}
+.task:hover .markImportantButton{
+    display: block;
+}
+.task:hover .deleteButton{
+    display: block;
+}
+.invisibleButtons{
+    display: flex;
+    flex-direction: row;
+}
+.invisibleButtons button{
+    display: none;
+    height: 36px;
+    margin-right: 10px;
+    margin-bottom: 62px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    border: none;
+}
+.markImportantButton{
+    margin-top: 12px;
+    width: 183px;
+    border-radius: 20px;
+    color: white;
+    background-color: #40bf77;
+    margin-right: 9px;
+    margin-left: 21px;
+}
+.markImportantButton p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top:10px;
+}
+
+.importantTask{
+    background-color: #b3b3b3;
+}
+.unimportantTask {
+    background-color: #40bf77;
+
+}
+
+.importantText{
+    font-weight: 800;
+}
+.importantText::before{
+    content: "☆";
+}
+.doneTask{
+    text-decoration: line-through;
+}
+.undoneText{
+    text-decoration: none;
+}
+
+.deleteButton{
+    margin-top: 10px;
+    background: none;
+}
